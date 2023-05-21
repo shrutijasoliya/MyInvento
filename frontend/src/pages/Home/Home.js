@@ -39,6 +39,7 @@ const Home = () => {
       <section className="container hero">
         <div className="hero-text">
           <h2>Inventory {"&"} Stock Management Solution</h2>
+          <br/>
           <p>
             This application is a simple inventory management system. It
             interacts with an API to access a live database so the information

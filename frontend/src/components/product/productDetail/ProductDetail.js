@@ -46,7 +46,7 @@ const ProductDetail = () => {
           <div className="detail">
             <Card cardClass="group">
               {product?.image ? (
-                <img
+                <img style={{ height: 350, width: 500, }}
                   src={product.image.filePath}
                   alt={product.image.fileName}
                 />
@@ -66,14 +66,14 @@ const ProductDetail = () => {
               <b>&rarr; Category : </b> {product.category}
             </p>
             <p>
-              <b>&rarr; Price : </b> {"$"}
+              <b>&rarr; Price : </b> {"₹"}
               {product.price}
             </p>
             <p>
               <b>&rarr; Quantity in stock : </b> {product.quantity}
             </p>
             <p>
-              <b>&rarr; Total Value in stock : </b> {"$"}
+              <b>&rarr; Total Value in stock : </b> {"₹"}
               {product.price * product.quantity}
             </p>
             <hr />
